@@ -3,6 +3,7 @@
 ## Description
 
 參考 [colonist4/pg-mutex-lock](https://github.com/colonist4/pg-mutex-lock) 完善 postgres 諮詢鎖功能，並使用 [pg pool](https://node-postgres.com/api/pool#poolconnect) 解決斷線自動重連
+<br><br>
 Refer to [colonist4/pg-mutex-lock](https://github.com/colonist4/pg-mutex-lock) to improve postgres advisory lock function, and use [pg pool](https://node-postgres.com/api/pool#poolconnect) to solve disconnection and automatic reconnection
 
 ## Feature
