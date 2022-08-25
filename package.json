@@ -1,11 +1,11 @@
 {
   "name": "pglock-v2",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts --dts",
-    "deploy": "npm build && npm publish --access=public"
+    "deploy": "npm run build && npm publish --access=public"
   },
   "author": {
     "name": "funtuan",
@@ -13,7 +13,7 @@
     "url": "https://github.com/funtuan"
   },
   "repository": {
-    "url": "https://github.com/funtuan/pg-lcok"
+    "url": "https://github.com/funtuan/pglock-v2"
   },
   "license": "ISC",
   "devDependencies": {
