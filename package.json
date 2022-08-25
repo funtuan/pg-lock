@@ -1,14 +1,14 @@
 {
-  "name": "pg-lock",
+  "name": "@funtuantw/pg-lock",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts --dts",
-    "deploy": "yarn build && npm publish"
+    "deploy": "npm build && npm publish --access public"
   },
   "author": {
-    "name": "FunTuan",
+    "name": "funtuan",
     "email": "hank85627@gmail.com",
     "url": "https://github.com/funtuan"
   },
