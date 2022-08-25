@@ -73,6 +73,7 @@ export class PGLock {
         return await func()
       } finally {
         await this.releaseLock(client, key)
+        client.release()
       }
     }
 }
