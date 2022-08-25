@@ -50,6 +50,40 @@ It directly return results of pg_advisory_unlock.
 
 Mutex lock by async function.
 
+## Example
+
+```javascript
+import { PGLock } from 'pglock-v2'
+
+const pgLock = new PGLock({
+  poolConfig: {
+    host: 'localhost',
+    port: 5432,
+    user: 'postgres',
+    password: 'password',
+    database: 'database',
+  },
+})
+
+setTimeout(async () => {
+  console.log('start A')
+  await pgLock.lock('test', async () => {
+    console.log('locked A')
+    await wait(1000)
+    console.log('unlocked A')
+  })
+}, 100)
+
+setTimeout(async () => {
+  console.log('start B')
+  await pgLock.lock('test', async () => {
+    console.log('locked B')
+    await wait(100)
+    console.log('unlocked B')
+  })
+}, 300)
+```
+
 ## Dependencies
 
 - pg (<https://github.com/brianc/node-postgres>)
