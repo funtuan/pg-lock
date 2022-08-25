@@ -1,11 +1,11 @@
 {
-  "name": "@funtuantw/pg-lock",
+  "name": "pglock-v2",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts --dts",
-    "deploy": "npm build && npm publish --access public"
+    "deploy": "npm build && npm publish --access=public"
   },
   "author": {
     "name": "funtuan",
